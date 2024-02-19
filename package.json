@@ -1,0 +1,75 @@
+{
+  "name": "editable-creatable-multiselect",
+  "version": "2.1.0",
+  "private": false,
+  "description": "Editable & Creatable Multiselect Dropdown For React",
+  "author": "Bishnu Dev",
+  "keywords": [
+    "multiselect",
+    "dropdown",
+    "ui",
+    "select dropdown",
+    "multiple select dropdown",
+    "editable select dropdown",
+    "creatable select dropdown"
+  ],
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bordernone/editable-creatable-multiselect.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bordernone/editable-creatable-multiselect/issues"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.15.10",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "^5.0.1",
+    "react-select": "^5.8.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files",
+    "build-windows": "rimraf dist && SET NODE_ENV=production && babel src/lib --out-dir dist --copy-files",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.16.0",
+    "@babel/core": "^7.16.0",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.16.4",
+    "@testing-library/jest-dom": "^5.15.1",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "mkdirp": "^1.0.4",
+    "rimraf": "^3.0.2"
+  }
+}
