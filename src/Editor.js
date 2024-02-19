@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 
+//Functional component to edit the category of the selected "company""
 const Editor = ({ selectedOption, onSubmit }) => {
 const [category, setCategory] = useState("");
 
