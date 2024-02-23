@@ -2,16 +2,8 @@
 import './App.css';
 import Editor from './Editor.js';
 import InfoTable from './InfoTable.js';
-
 import React, {useState} from "react";
 import Select from 'react-select';
-import Table from '@mui/material/Table';
-import TableBody from '@mui/material/TableBody';
-import TableCell from '@mui/material/TableCell';
-import TableContainer from '@mui/material/TableContainer';
-import TableHead from '@mui/material/TableHead';
-import TableRow from '@mui/material/TableRow';
-import Paper from '@mui/material/Paper';
 
 function App()  {
     const [companies, setCompanies] = 
@@ -28,14 +20,13 @@ function App()  {
         setCompanies((prevCompanies) => {
         return prevCompanies.map((company) =>
             company.id === newValue.id ? newValue : company
-        );
-    });
-    setSelectedOption(newValue);
-        console.log('Changed ' + newValue.label + '`s category to: ' + newValue.category);
+            );
+        });
+        setSelectedOption(newValue);
+            console.log('Changed ' + newValue.label + '`s category to: ' + newValue.category);
     };
     const handleChange = (selectedOption) => {
         setSelectedOption(selectedOption)
-        console.log('Selected ' + selectedOption.label + ' category to: ' + selectedOption.category);
     }
 
     return (
