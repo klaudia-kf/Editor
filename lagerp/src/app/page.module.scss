@@ -18,10 +18,42 @@
     transition: background-color 0.1s ease-in-out;
     justify-content: center;
     align-items: center;
+    
+    padding: 0.4em;
+    text-align: center;
+    border-radius: 0.1em;
+    cursor: move;
 
     &:hover {
       background-color: rgba(0, 0, 0, 0.1);
     }
+  }
+}
+
+
+.fileUploadContainer{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5em;
+  background-color: #b3cce6;
+  height: 22em;
+  border-radius: 0.4em;
+  align-items: center;
+  width:100%;
+
+  .preview{
+    background-Color: white;
+    border-radius: 0.4em;
+    width: 20em;
+    height: 15em;
+    align-content: center;
+    border: 2px solid rgb(164, 164, 164);
+    border-radius: 2px;
+  }
+  .previewContent{
+    align-self: center;
+    max-width: 20em;
+    max-height: 20em;
   }
 }
 
@@ -32,7 +64,7 @@
 .iconImage {
   width: 48px;
   height: 48px;
-
+  border-radius: 0.3em;
 }
 
 .main {
